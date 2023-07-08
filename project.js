@@ -13,7 +13,7 @@ const $time = $('#Time');
 const $input = $('input[type="text"]');
 const $form = $('form');
 const $image = $('#artistImage');
-
+const $info = $('#Info');
 
 
 $form.on('submit', searchForEvents);
@@ -44,6 +44,7 @@ function render() {
   $venue.text(artistData._embedded.events[0]._embedded.venues[0].name); 
   $price.text( '$' + artistData._embedded.events[0].priceRanges[0].min); 
   $image.attr('src', artistData._embedded.events[0].images[0].url);
+  $info.text(artistData._embedded.events[0].name);
 
   const websiteLink = artistData._embedded.events[0].url;
   if (websiteLink) {
@@ -51,6 +52,8 @@ function render() {
     const $websiteButton = $('<button>').addClass('website-button').append($websiteElement);
     $('#website').empty().append($websiteButton);
   }
+
+
 }
 
 

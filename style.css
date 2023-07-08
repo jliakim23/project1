@@ -14,12 +14,26 @@ p {
   display:list-item;
   margin: 0;
   padding: 0;
- 
+
 }
 
 h4 {
   margin-right: 200px;
+
 }
+
+main {
+    border: 5px solid black;
+    margin-left: 100px;
+    margin-right: 450px ;
+    background-color: rgb(245, 245, 203);
+     
+}
+
+.main {
+    margin-top: 50px;
+}
+
 
 .image-container {
   
@@ -28,11 +42,12 @@ h4 {
     margin-right: 10px;
     width: 50%;
     position: relative;
-    top: -130px;
+    top: -170px;
 }
 
 .website-button {
   font-family: sans-serif;
+  
   }
 
 #artistImage {
